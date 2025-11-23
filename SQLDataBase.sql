@@ -1,4 +1,4 @@
-Create database user
+CREATE DATABASE users;
 USE users;
 
 CREATE TABLE students (
