@@ -2,7 +2,7 @@
 
 ## 📌 Objective
 
-This project integrates Java concepts into a working console-based application capable of performing **CRUD operations using JDBC**. It demonstrates how OOP, collections, and MySQL connectivity can be applied in a real-world project.
+This project integrates Java concepts into a working console-based application capable of performing **CRUD operations using JDBC**. It demonstrates how Object-Oriented Programming, collections, and MySQL database connectivity work together in a real-world software scenario.
 
 ---
 
@@ -11,7 +11,7 @@ This project integrates Java concepts into a working console-based application c
 * **Language:** Java
 * **Database:** MySQL
 * **Connectivity:** JDBC
-* **Data Structures:** ArrayList
+* **Data Structure:** ArrayList
 * **Interface:** Console-based application
 
 ---
@@ -22,34 +22,34 @@ The **Student Result Management System** allows users to:
 
 * Add new student records
 * Update existing student details
-* Delete student records
-* View student information and results
-* Store and retrieve information using MySQL via JDBC
-* Maintain an in-memory copy using ArrayList
+* Delete student entries
+* View stored student information
+* Store and retrieve data from MySQL using JDBC
+* Maintain an in-memory list using `ArrayList`
 
-Key classes in the project:
+### Project Class Structure
 
-| Class Name        | Responsibility                               |
-| ----------------- | -------------------------------------------- |
-| `Student`         | Represents student entity                    |
-| `Result`          | Stores subject-wise marks and result details |
-| `DatabaseManager` | Handles database operations using JDBC       |
+| Class Name        | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| `Student`         | Represents the student entity                     |
+| `Result`          | Stores subject marks and total calculation        |
+| `DatabaseManager` | Handles JDBC database connectivity and operations |
 
 ---
 
 ## 🧠 Concepts Practiced
 
-* Object-Oriented Programming (Classes, Objects, Encapsulation)
-* Collections (`ArrayList`)
-* Exception handling
-* JDBC-based CRUD operations
-* Menu-driven interactive system
+* Object-Oriented Programming (Encapsulation, Classes, Objects)
+* CRUD operations using JDBC
+* Using `ArrayList` for managing records in memory
+* Exception handling for stable execution
+* Menu-driven program flow through console interaction
 
 ---
 
 ## 🗄 Database Setup
 
-Run the following commands in MySQL:
+Run the following SQL commands in MySQL to create the database and table:
 
 ```sql
 CREATE DATABASE users;
@@ -62,19 +62,18 @@ CREATE TABLE students (
 );
 ```
 
-```
-
 ---
 
 ## ⚙ Configuration
 
-Before running the application:
+Before running the project:
 
-1. Add the **MySQL JDBC Driver** (e.g., `mysql-connector-j.jar`) to the project.
-2. Update database connection details in `DatabaseManager.java`:
+1. Install MySQL and ensure the database is created.
+2. Add the **MySQL JDBC Driver** (`mysql-connector.jar`) to the project classpath.
+3. Update database credentials inside `DatabaseManager.java`, for example:
 
 ```java
-private static final String DB_URL = "jdbc:mysql://localhost:3306/studentdb";
+private static final String DB_URL = "jdbc:mysql://localhost:3306/users";
 private static final String DB_USER = "root";
 private static final String DB_PASS = "password";
 ```
@@ -85,29 +84,30 @@ private static final String DB_PASS = "password";
 
 1. Clone the repository:
    `https://github.com/Aryan-17806/Student-Result-Management-System`
-2. Import the project into your IDE (Eclipse, IntelliJ, NetBeans, etc.).
-3. Ensure MySQL is running and the database is created.
-4. Compile and run `StudentManagementApp.java`.
+2. Open the project in your preferred Java IDE (IntelliJ, Eclipse, NetBeans, etc.).
+3. Ensure MySQL is running and the database setup script has been executed.
+4. Compile and run the main application file (`StudentManagementApp.java`).
 
 ---
 
 ## 📖 Learning Outcomes
 
-By completing this project, learners will:
+By completing this project, students will:
 
-* Apply OOP principles in a real-world application
-* Write reusable and maintainable code
-* Perform CRUD operations using JDBC
-* Understand how in-memory and persistent storage can work together
+* Implement clean and maintainable Java code
+* Apply OOP principles in real application development
+* Perform database CRUD operations using JDBC
+* Work with both in-memory and persistent storage
 
 ---
 
 ## 🤝 Contribution
 
-Contributions, improvements, and suggestions are welcome! Submit a pull request anytime.
+Contributions are welcome!
+Feel free to fork the project and submit pull requests for improvements.
 
 ---
 
 ## 📄 License
 
-This project is intended for academic and learning purposes.
+This project is intended for educational and academic use.
