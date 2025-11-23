@@ -49,20 +49,19 @@ Key classes in the project:
 
 ## 🗄 Database Setup
 
-### Create MySQL Database and Table
+Run the following commands in MySQL:
 
 ```sql
-CREATE DATABASE studentdb;
-USE studentdb;
+CREATE DATABASE users;
+USE users;
 
 CREATE TABLE students (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100),
-    course VARCHAR(100),
-    mark1 INT,
-    mark2 INT,
-    mark3 INT
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50),
+  course VARCHAR(50)
 );
+```
+
 ```
 
 ---
